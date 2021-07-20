@@ -41,6 +41,10 @@ body{
     margin-bottom: 15px;
 }
 
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
 .margin-bottom-20 {
     margin-bottom: 20px;
 }
@@ -60,6 +64,14 @@ body{
 
 .margin-bottom-100 {
     margin-bottom: 100px;
+}
+
+.relative{
+    position: relative;
+}
+
+.flex{
+    display: flex;
 }
 
 .clearfix{
@@ -133,17 +145,23 @@ body{
     text-align: center;
 }
 
+a{
+    text-decoration: none;
+    color: gray;
+}
+
 .menu-container{
     background-color: black;
-    height: calc(100vh - 50px);
-    width: 15%;
+    height: calc(100vh - 70px);
+    width: 180px;
     color: gray;
     padding-left: 20px;
     padding-top: 20px;
+    padding-right: 20px;
 }
 
-div.menu-container img{
-    width: 100px;
+div.menu-container > img{
+    width: 80px;
 }
 
 div.menu-container ul{
@@ -152,9 +170,52 @@ div.menu-container ul{
 
 div.menu-container ul li{
     padding-top: 10px;
-    font-size: 0.8em;
+    font-size: 0.7em;
+    line-height: 100%;
+}
+
+div.menu-container a{
+    align-self: center;
+    margin-left: 5px;
 }
 
 div.menu-container i{
     color: white;
+}
+
+div.menu-container nav img{
+    width: 20px;
+}
+
+.big-plus{
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    display: inline-block;
+    vertical-align: center;
+    color: black;
+    position: relative;
+}
+
+div.big-plus i{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.profile{
+    width: 75%;
+    position: absolute;
+    bottom: 0;
+}
+
+.profile div.flex i{
+    font-size: 25px;
+    color: gray;
+}
+
+div.profile h3{
+    align-self: center;
+    margin-left: 5px;
 }
