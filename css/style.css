@@ -151,6 +151,8 @@ a{
 }
 
 .menu-container{
+    position: fixed;
+    left: 0;
     background-color: black;
     height: calc(100vh - 70px);
     width: 180px;
@@ -218,4 +220,28 @@ div.big-plus i{
 div.profile h3{
     align-self: center;
     margin-left: 5px;
+}
+
+header.upgrade{
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    height: 70px;
+}
+
+main{
+    overflow: auto;
+    width: 100%;
+    height: calc(100vh - 140px);
+    background-color: rgb(29, 29, 29);
+}
+
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(75, 74, 74);
+    height: 70px;
 }
