@@ -8,6 +8,8 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+/*General Rules*/
+
 .margin-top-10 {
     margin-top: 10px;
 }
@@ -150,20 +152,12 @@ a{
     color: gray;
 }
 
-.menu-container{
-    position: fixed;
-    left: 0;
-    background-color: black;
-    height: calc(100vh - 70px);
-    width: 180px;
-    color: gray;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-}
+/*Menù laterale*/
 
-div.menu-container > img{
-    width: 80px;
+div.menu-container nav > img{
+    width: 120px;
+    padding-left: 20px;
+    margin-top: 15px;
 }
 
 div.menu-container ul{
@@ -171,7 +165,8 @@ div.menu-container ul{
 }
 
 div.menu-container ul li{
-    padding-top: 10px;
+    padding-left: 20px;
+    margin-top: 15px;
     font-size: 0.7em;
     line-height: 100%;
 }
@@ -185,8 +180,16 @@ div.menu-container i{
     color: white;
 }
 
-div.menu-container nav img{
+div.menu-container nav ul img{
     width: 20px;
+}
+
+nav{
+    align-self: flex-start;
+}
+
+.border-left-lime{
+    border-left: 3px solid chartreuse;
 }
 
 .big-plus{
@@ -194,7 +197,6 @@ div.menu-container nav img{
     height: 30px;
     background-color: gray;
     display: inline-block;
-    vertical-align: center;
     color: black;
     position: relative;
 }
@@ -204,12 +206,13 @@ div.big-plus i{
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%);
+   color: black;
+   font-size: 15px;
 }
 
 .profile{
-    width: 75%;
-    position: absolute;
-    bottom: 0;
+    align-self: flex-end;
+    padding: 0 20px;
 }
 
 .profile div.flex i{
@@ -222,26 +225,35 @@ div.profile h3{
     margin-left: 5px;
 }
 
-header.upgrade{
-    width: 100%;
+/*layout pagina*/
+
+.menu-container{
+    background-color: black;
+    height: calc(100vh - 70px);
+    width: 180px;
+    color: gray;
+    flex-direction: column;
+    display: grid;
+}
+
+#top-bar{
     background-color: rgb(41, 41, 41);
     height: 70px;
+    width: calc(100% - 180px);
 }
 
 main{
+    width: calc(100% - 180px);
     overflow: auto;
-    width: 100%;
     height: calc(100vh - 140px);
     background-color: rgb(29, 29, 29);
 }
 
-
-
-
 footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
     background-color: rgb(75, 74, 74);
     height: 70px;
+}
+
+#layout-container{
+    
 }
