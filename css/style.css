@@ -132,3 +132,24 @@ body{
 .center-text{
     text-align: center;
 }
+
+.menu-container{
+    background-color: black;
+    height: calc(100vh - 50px);
+    width: 20%;
+    color: gray;
+}
+
+div.menu-container img{
+    width: 200px;
+}
+
+div.menu-container ul{
+    list-style-type: none;
+}
+
+div.menu-container ul li{}
+
+i{
+    color: white;
+}
