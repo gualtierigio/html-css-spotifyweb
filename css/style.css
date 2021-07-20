@@ -243,9 +243,8 @@ div.profile h3{
 }
 
 main{
-    width: calc(100% - 180px);
+    flex-grow: 1;
     overflow: auto;
-    height: calc(100vh - 140px);
     background-color: rgb(29, 29, 29);
 }
 
@@ -255,5 +254,5 @@ footer{
 }
 
 #layout-container{
-    
+    height: calc(100vh - 70px);
 }
