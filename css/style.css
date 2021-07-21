@@ -288,6 +288,12 @@ footer{
     font-weight: bold;
 }
 
+/*overflow container*/
+
+#overflow-container{
+    padding: 15px;
+}
+
 /*Tools bar*/
 
 .green-underline{
