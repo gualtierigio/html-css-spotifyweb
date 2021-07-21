@@ -152,6 +152,10 @@ a{
     color: gray;
 }
 
+a:hover{
+    color: white;
+}
+
 /*Menù laterale*/
 
 div.menu-container nav > img{
@@ -188,7 +192,7 @@ nav{
     align-self: flex-start;
 }
 
-.border-left-lime{
+.border-left-lime:hover{
     border-left: 3px solid chartreuse;
 }
 
@@ -199,6 +203,10 @@ nav{
     display: inline-block;
     color: black;
     position: relative;
+}
+
+.big-plus:hover{
+    background-color: white;
 }
 
 div.big-plus i{
@@ -236,12 +244,6 @@ div.profile h3{
     display: grid;
 }
 
-#top-bar{
-    background-color: rgb(41, 41, 41);
-    height: 70px;
-    width: calc(100% - 180px);
-}
-
 main{
     flex-grow: 1;
     overflow: auto;
@@ -255,4 +257,59 @@ footer{
 
 #layout-container{
     height: calc(100vh - 70px);
+}
+
+/*Top bar upgrade*/
+
+#top-bar{
+    background-color: rgba(41, 41, 41, 0.85);
+    height: 70px;
+    width: 100%;
+    text-align: right;
+    line-height: 70px;
+}
+
+#top-bar button{
+    margin-right: 30px;
+    padding: 10px 25px;
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+#top-bar button:hover{
+    transition: all;
+    scale: 1.2;
+}
+
+#top-bar a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*Tools bar*/
+
+.green-underline{
+    border-bottom: 3px groove limegreen;
+}
+
+#tools-bar{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#tools-bar ul{
+    font-size: 13px;
+    color: gray;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+#tools-bar li{
+    text-transform: uppercase;
+}
+
+#tools-bar li:hover{
+    color: white;
 }
