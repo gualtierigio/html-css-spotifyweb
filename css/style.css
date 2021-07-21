@@ -233,12 +233,20 @@ div.profile h3{
     margin-left: 5px;
 }
 
+@media screen and (max-width:565px) {
+
+    div.menu-container nav > img{
+        display: none;
+    }
+}
+
 /*layout pagina*/
 
 .menu-container{
     background-color: black;
     height: calc(100vh - 70px);
-    width: 180px;
+    width: 160px;
+    min-width: 160px;
     color: gray;
     flex-direction: column;
     display: grid;
@@ -288,6 +296,10 @@ footer{
     font-weight: bold;
 }
 
+@media screen and (max-width:565px) {
+    
+}
+
 /*overflow container*/
 
 #overflow-container{
@@ -305,7 +317,7 @@ footer{
 }
 
 #tools-bar{
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -329,14 +341,14 @@ footer{
 
 #recently-played{
     justify-content: space-evenly;
-    height: 20vh;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .recently-played__content{
     height: 100%;
-    width: 25vh;
+    width: calc(100% / 6 -10px);
     text-align: center;
-    position: relative;
     margin-right: 10px;
 }
 
@@ -350,9 +362,44 @@ footer{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 60px;
+    font-size: 5vw;
+    display: none;
 }
 
 .recently-played__content img:hover{
     opacity: 0.4;
+}
+
+.recently-played__content img:hover + i{
+    display: block;
+}
+
+@media screen  and (min-width: 565px) and (max-width: 850px){
+    #recently-played{
+        justify-content: flex-start;
+    }
+
+    .recently-played__content{
+        width: calc(100% / 4 - 10px);
+    }
+
+    .recently-played__content i{
+        font-size: 10vw;
+    }
+}
+
+@media screen  and (max-width: 565px){
+    #recently-played{
+        flex-direction: column;
+    }
+
+    .recently-played__content{
+        width: calc(100% / 2 -10px)
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .recently-played__content i{
+        font-size: 20vw;
+    }
 }
