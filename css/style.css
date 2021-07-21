@@ -192,7 +192,7 @@ nav{
     align-self: flex-start;
 }
 
-.border-left-lime:hover{
+.border-left-lime{
     border-left: 3px solid chartreuse;
 }
 
@@ -297,7 +297,11 @@ footer{
 /*Tools bar*/
 
 .green-underline{
-    border-bottom: 3px groove limegreen;
+    background-color: limegreen;
+    height: 2px;
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 3px;
 }
 
 #tools-bar{
@@ -310,6 +314,7 @@ footer{
     color: gray;
     list-style-type: none;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #tools-bar li{
@@ -318,4 +323,36 @@ footer{
 
 #tools-bar li:hover{
     color: white;
+}
+
+/*Recently Played*/
+
+#recently-played{
+    justify-content: space-evenly;
+    height: 20vh;
+}
+
+.recently-played__content{
+    height: 100%;
+    width: 25vh;
+    text-align: center;
+    position: relative;
+    margin-right: 10px;
+}
+
+.recently-played__content img{
+    width: 100%;
+}
+
+.recently-played__content i{
+    position: absolute;
+    color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+
+.recently-played__content img:hover{
+    opacity: 0.4;
 }
