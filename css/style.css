@@ -176,7 +176,6 @@ div.menu-container ul li{
     padding-left: 20px;
     margin-top: 15px;
     font-size: 0.7em;
-    line-height: 100%;
 }
 
 div.menu-container a{
@@ -237,15 +236,6 @@ div.profile h3{
     margin-left: 5px;
 }
 
-@media screen and (max-width:565px) {
-
-    div.menu-container nav > img{
-        display: none;
-    }
-}
-
-/*layout pagina*/
-
 .menu-container{
     background-color: black;
     height: calc(100vh - 70px);
@@ -255,6 +245,51 @@ div.profile h3{
     flex-direction: column;
     display: grid;
 }
+
+
+@media screen and (max-width:565px) {
+
+    .menu-container{
+        width: 50px;
+        min-width: 50px;
+        text-align: center;
+    }
+
+    div.menu-container nav > img{
+        display: none;
+    }
+
+    nav{
+        width: 50px;
+    }
+
+    div.big-plus, li.white-text{
+        display: none;
+    }
+
+    div.menu-container ul li{
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    div.menu-container ul li a{
+        display: none;
+    }
+
+    div.profile a, div.profile hr, div.profile h3{
+        display: none;
+    }
+
+    div.profile i{
+        font-size: 20px;
+    }
+
+    .border-left-lime{
+        border: none;
+    }
+}
+
+/*layout pagina*/
 
 main{
     flex-grow: 1;
