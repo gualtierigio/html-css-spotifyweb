@@ -94,6 +94,10 @@ body{
     display: inline-block;
 }
 
+.tondo{
+    border-radius: 50%;
+}
+
 .small-text{
     font-size:11px;
 }
@@ -342,12 +346,10 @@ footer{
 #recently-played{
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 .recently-played__content{
-    height: 100%;
-    width: calc(100% / 6 -10px);
+    width: calc(100% / 6 - 10px);
     text-align: center;
     margin-right: 10px;
 }
@@ -374,7 +376,7 @@ footer{
     display: block;
 }
 
-@media screen  and (min-width: 565px) and (max-width: 850px){
+@media screen  and (min-width: 565px) and (max-width: 768px){
     #recently-played{
         justify-content: flex-start;
     }
@@ -386,20 +388,29 @@ footer{
     .recently-played__content i{
         font-size: 10vw;
     }
+
+    h1{
+        font-size: 1.5em;
+    }
 }
 
 @media screen  and (max-width: 565px){
-    #recently-played{
-        flex-direction: column;
-    }
 
     .recently-played__content{
-        width: calc(100% / 2 -10px)
+        width: calc(100% / 2 - 10px);
         text-align: center;
         margin-top: 30px;
     }
 
     .recently-played__content i{
         font-size: 20vw;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 0.8em;
     }
 }
