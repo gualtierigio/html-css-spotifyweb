@@ -456,3 +456,59 @@ footer{
         font-size: 0.8em;
     }
 }
+
+/*Qui inizia il Footer*/
+
+footer{
+    justify-content: space-between;
+}
+
+/*Prima parte footer*/
+
+#now-plaing{
+    height: 100%;
+    /*widh momentanea*/
+    width: 200px;
+    min-width: 200px;
+    border: 1px solid white;
+}
+
+#now-plaing img{
+    width: 30px;
+}
+
+/*Parte centrale fotter*/
+
+#footer-tools{
+    height: 100%;
+    /*widh momentanea*/
+    width: 60%;
+    border: 1px solid white;
+    justify-self: center;
+}
+
+.play-bar{
+    border: 1px solid white;
+    height: 50%;
+    /*widh momentanea*/
+    width: 200px;
+    min-width: 200px;
+    margin: 0 auto;
+}
+
+.time-bar{
+    border: 1px solid white;
+    height: 50%;
+    /*widh momentanea*/
+    width: 100%;
+}
+
+/*Terza parte Footer*/
+
+#volume{
+    height: 100%;
+    /*widh momentanea*/
+    width: 200px;
+    min-width: 200px;
+    border: 1px solid white;
+}
