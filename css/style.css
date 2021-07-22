@@ -470,7 +470,6 @@ footer{
     /*widh momentanea*/
     width: 135px;
     min-width: 135px;
-    border: 1px solid white;
 }
 
 #now-plaing img{
@@ -495,12 +494,10 @@ footer{
     height: 100%;
     /*widh momentanea*/
     width: 60%;
-    border: 1px solid white;
     justify-self: center;
 }
 
 .play-bar{
-    border: 1px solid white;
     height: 50%;
     /*widh momentanea*/
     width: 185px;
@@ -511,15 +508,20 @@ footer{
 }
 
 .play-bar i{
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 0 10px;
 }
 
+.play-bar i.fa-play-circle:hover{
+    animation: normal;
+    scale: 1.1;
+}
+
 .time-bar{
-    border: 1px solid white;
     height: 50%;
     /*widh momentanea*/
     width: 100%;
+    padding-top: 5px;
 }
 
 .time-counter{
@@ -533,9 +535,18 @@ footer{
 .played-time{
     width: 20%;
     height: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(208, 208, 208);
     display: block;
     border-radius: 3px;
+    position: relative;
+}
+
+.time-counter:hover .played-time, .time-counter-right:hover .played-time{
+    background-color: yellowgreen;
+}
+
+.time-counter:hover .round-play-pointer, .time-counter-right:hover .round-play-pointer{
+    display: block;
 }
 
 .round-play-pointer{
@@ -544,7 +555,11 @@ footer{
     border-radius: 50%;
     background-color: white;
     display: block;
-    margin-left: 95%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    display: none;
 }
 
 /*Terza parte Footer*/
@@ -554,5 +569,20 @@ footer{
     /*widh momentanea*/
     width: 165px;
     min-width: 165px;
-    border: 1px solid white;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#volume i{
+    color: white;
+    font-size: 11px;
+    margin-right: 10px;
+}
+
+.time-counter-right{
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: gray;
+    margin-right: 5px;
 }
