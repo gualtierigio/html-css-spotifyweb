@@ -356,24 +356,31 @@ footer{
 }
 
 #tools-bar{
-    width: 80%;
+    width: 450px;
     margin: 0 auto;
 }
 
 #tools-bar ul{
-    font-size: 13px;
+    font-size: 11px;
     color: gray;
     list-style-type: none;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #tools-bar li{
     text-transform: uppercase;
+    margin-right: 10px;
 }
 
 #tools-bar li:hover{
     color: white;
+}
+
+@media screen and (max-width: 630px) {
+    #tools-bar{
+        width: 100%;
+    }
 }
 
 /*Recently Played*/
