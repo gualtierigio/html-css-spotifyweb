@@ -468,13 +468,24 @@ footer{
 #now-plaing{
     height: 100%;
     /*widh momentanea*/
-    width: 200px;
-    min-width: 200px;
+    width: 135px;
+    min-width: 135px;
     border: 1px solid white;
 }
 
 #now-plaing img{
     width: 30px;
+    margin: 0 5px;
+}
+
+#now-plaing .left-footer{
+    /*Cetratura verticale?*/
+}
+
+.folder-heart{
+    flex-direction: column;
+    color: white;
+    margin: 0 5px;
 }
 
 /*Parte centrale fotter*/
@@ -491,9 +502,15 @@ footer{
     border: 1px solid white;
     height: 50%;
     /*widh momentanea*/
-    width: 200px;
-    min-width: 200px;
+    width: 185px;
+    min-width: 185px;
     margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.play-bar i{
+    color: white;
+    margin: 0 10px;
 }
 
 .time-bar{
@@ -508,7 +525,7 @@ footer{
 #volume{
     height: 100%;
     /*widh momentanea*/
-    width: 200px;
-    min-width: 200px;
+    width: 135px;
+    min-width: 135px;
     border: 1px solid white;
 }
