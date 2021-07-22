@@ -311,9 +311,13 @@ footer{
 #top-bar{
     background-color: rgba(41, 41, 41, 0.85);
     height: 70px;
-    width: 100%;
+    width: calc(100% - 160px);
     text-align: right;
     line-height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
 }
 
 #top-bar button{
@@ -335,10 +339,6 @@ footer{
     font-weight: bold;
 }
 
-@media screen and (max-width:565px) {
-    
-}
-
 /*overflow container*/
 
 #overflow-container{
@@ -357,7 +357,7 @@ footer{
 
 #tools-bar{
     width: 450px;
-    margin: 0 auto;
+    margin: 90px auto 0 auto;
 }
 
 #tools-bar ul{
