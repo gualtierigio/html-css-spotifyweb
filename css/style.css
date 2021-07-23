@@ -289,6 +289,18 @@ div.profile h3{
     }
 }
 
+@media screen and (max-height: 580px) {
+    ul.playlist{
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-height: 480px) {
+    div.profile{
+        display: none;
+    }
+}
+
 /*layout pagina*/
 
 main{
@@ -455,6 +467,10 @@ footer{
     p{
         font-size: 0.8em;
     }
+    
+    #top-bar{
+        width: calc(100% - 50px);
+    }
 }
 
 /*Qui inizia il Footer*/
@@ -489,6 +505,10 @@ footer{
 }
 
 /*Parte centrale fotter*/
+
+footer{
+    z-index: 100;
+}
 
 #footer-tools{
     height: 100%;
